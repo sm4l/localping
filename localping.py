@@ -13,21 +13,36 @@ def get_mac_vendor(mac, mac_vendors):
     for entry in mac_vendors:
         if mac_prefix.startswith(entry["macPrefix"].replace(":", "").upper()):
             return entry["vendorName"]
-    return "Desconhecido"
+    return "UNK"
 
+def generate_ip_list(network):
+    ip_list = []
+    network_prefix = ".".join(network.split(".")[:-1])  # Remove a parte final do endereço IP
+    for i in range(1, 255):  # Gerar IPs de 1 a 254 no último octeto
+        ip_list.append(network_prefix + "." + str(i))
+    return ip_list
 
 def scan_network(network):
     mac_vendors = load_mac_vendors()
     arp_request = scapy.ARP(pdst=network)
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
     arp_request_broadcast = broadcast/arp_request
-    answered_list = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)[0]
+    answered_list, _ = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)
 
     devices_list = []
-    for index, element in enumerate(answered_list):
-        device_dict = {"ip": element[1].psrc, "mac": element[1].hwsrc}
-        device_dict["vendor"] = get_mac_vendor(device_dict["mac"], mac_vendors)
+    for element in answered_list:
+        success = 1
+        device_dict = {"ip": element[1].psrc, "mac": element[1].hwsrc, "success": success}
+        device_dict["vendor"] = get_mac_vendor(device_dict["mac"], mac_vendors) if device_dict["mac"] else "unk"
         devices_list.append(device_dict)
+    
+    # Adicionando dados para IPs sem resposta (sucesso 0)
+    ips_scanned = [element[1].psrc for element in answered_list]
+    for ip in generate_ip_list(network):
+        if ip not in ips_scanned:
+            device_dict = {"ip": ip, "mac":"XX", "success": 0, "vendor": "XX"}
+            devices_list.append(device_dict)
+    
     return devices_list
 
 def publish_mqtt(devices_list):
