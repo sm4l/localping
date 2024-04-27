@@ -1,66 +1,49 @@
-import scapy.all as scapy
-import json
-import re
-import paho.mqtt.client as mqtt
-import time
+para completar a lista de IPs com sucesso 0
+def completar_ips_sem_sucesso(ips_sucesso):
+    for subrede in subredes:
+        for i in range(256):
+            ip = f'{subrede}.{i}'
+            if ip not in ips_sucesso:
+                # Se o IP não estiver na lista de IPs com sucesso, definir sucesso como 0
+                processar_ping({'ip': ip, 'success': 0})
 
-def load_mac_vendors():
-    with open("mac-vendors-export.json", "r") as f:
-        return json.load(f)
+# Callback para quando a conexão MQTT for estabelecida
+def on_connect(client, userdata, flags, rc):
+    print("Conectado com código de resultado: "+str(rc))
+    # Subscrever ao tópico
+    client.subscribe(mqtt_config['topic'])
 
-def get_mac_vendor(mac, mac_vendors):
-    mac_prefix = mac.replace(":", "").upper()[:6]  # Pegando os primeiros 6 caracteres do MAC
-    for entry in mac_vendors:
-        if mac_prefix.startswith(entry["macPrefix"].replace(":", "").upper()):
-            return entry["vendorName"]
-    return "UNK"
+# Callback para quando uma nova mensagem MQTT for recebida
+def on_message(client, userdata, msg):
+    print("Mensagem recebida no tópico "+msg.topic+": "+str(msg.payload.decode('utf-8')))
+    # Decodificar a mensagem JSON
+    pings = json.loads(msg.payload.decode('utf-8'))
 
-def generate_ip_list(network):
-    ip_list = []
-    network_prefix = ".".join(network.split(".")[:-1])  # Remove a parte final do endereço IP
-    for i in range(1, 255):  # Gerar IPs de 1 a 254 no último octeto
-        ip_list.append(network_prefix + "." + str(i))
-    return ip_list
+    # Verificar se a mensagem é uma lista
+    if isinstance(pings, list):
+        # Iterar sobre cada objeto JSON na lista
+        for ping in pings:
+            # Processar cada ping individualmente
+            processar_ping(ping)
+    else:
+        # Se não for uma lista, processar o ping como único
+        processar_ping(pings)
 
-def scan_network(network):
-    mac_vendors = load_mac_vendors()
-    arp_request = scapy.ARP(pdst=network)
-    broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
-    arp_request_broadcast = broadcast/arp_request
-    answered_list, _ = scapy.srp(arp_request_broadcast, timeout=1, verbose=False)
+# Criar um cliente MQTT
+client = mqtt.Client()
 
-    devices_list = []
-    for element in answered_list:
-        success = 1
-        device_dict = {"ip": element[1].psrc, "mac": element[1].hwsrc, "success": success}
-        device_dict["vendor"] = get_mac_vendor(device_dict["mac"], mac_vendors) if device_dict["mac"] else "unk"
-        devices_list.append(device_dict)
-    
-    # Adicionando dados para IPs sem resposta (sucesso 0)
-    ips_scanned = [element[1].psrc for element in answered_list]
-    for ip in generate_ip_list(network):
-        if ip not in ips_scanned:
-            device_dict = {"ip": ip, "mac":"XX", "success": 0, "vendor": "XX"}
-            devices_list.append(device_dict)
-    
-    return devices_list
+# Configurar os callbacks
+client.on_connect = on_connect
+client.on_message = on_message
 
-def publish_mqtt(devices_list):
-    client = mqtt.Client()
-    client.connect("aerisiot.com")
-    client.publish("test/ping", json.dumps(devices_list))
-    client.disconnect()
+# Conectar ao broker MQTT
+client.connect(mqtt_config['broker'], mqtt_config['port'], 60)
 
-def main():
-    networks = ["172.16.21.0/24"]
-    while True:
-        all_devices = []
-        for network in networks:
-            devices = scan_network(network)
-            all_devices.extend(devices)
-        publish_mqtt(all_devices)
-        print("Varredura concluída. Esperando 1 minuto para a próxima varredura...")
-        time.sleep(60)  # Espera 1 minuto antes de executar a próxima varredura
+# No início do script, antes de entrar no loop MQTT, obtemos os IPs com sucesso 1
+ips_sucesso = consultar_ips_sucesso()
+# Completamos a lista de IPs com sucesso 0
+completar_ips_sem_sucesso(ips_sucesso)
 
-if __name__ == "__main__":
-    main()
+# Manter a conexão MQTT ativa
+client.loop_forever()
+
