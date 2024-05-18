@@ -1,0 +1,2381 @@
+[
+    {
+        "id": "e3ad3dbe01fb5790",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2f297919b4fcf3f5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "aerisiot.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "74ab404d51a6ac3c",
+        "type": "Bacnet-Discovery",
+        "z": "e3ad3dbe01fb5790",
+        "name": "",
+        "events": true,
+        "json": true,
+        "mqtt": false,
+        "hiddenDeployToggle": false,
+        "prevHiddenToggleState": false,
+        "roundDecimal": 2,
+        "pointsToRead": {
+            "172.16.20.219-17800": {
+                "RxPanelData_PanelNumber": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 1
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 1
+                    },
+                    "objectName": "RxPanelData_PanelNumber",
+                    "displayName": "RxPanelData_PanelNumber",
+                    "presentValue": 1,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_CmdStatusNumber": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 2
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 2
+                    },
+                    "objectName": "RxPanelData_CmdStatusNumber",
+                    "displayName": "RxPanelData_CmdStatusNumber",
+                    "presentValue": 36,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Address": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 3
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 3
+                    },
+                    "objectName": "RxPanelData_Address",
+                    "displayName": "RxPanelData_Address",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Analogue": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 4
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 4
+                    },
+                    "objectName": "RxPanelData_Analogue",
+                    "displayName": "RxPanelData_Analogue",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "id_in": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 0
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 0
+                    },
+                    "objectName": "id_in",
+                    "displayName": "id_in",
+                    "presentValue": 130,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_CmdStatus": {
+                    "meta": {
+                        "objectId": {
+                            "type": 3,
+                            "instance": 0
+                        }
+                    },
+                    "objectID": {
+                        "type": 3,
+                        "instance": 0
+                    },
+                    "objectName": "RxPanelData_CmdStatus",
+                    "displayName": "RxPanelData_CmdStatus",
+                    "objectType": 3,
+                    "presentValue": 0,
+                    "description": ""
+                },
+                "RxPanelData_Zone": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 5
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 5
+                    },
+                    "objectName": "RxPanelData_Zone",
+                    "displayName": "RxPanelData_Zone",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Loop": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 6
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 6
+                    },
+                    "objectName": "RxPanelData_Loop",
+                    "displayName": "RxPanelData_Loop",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Always_1": {
+                    "meta": {
+                        "objectId": {
+                            "type": 3,
+                            "instance": 1
+                        }
+                    },
+                    "objectID": {
+                        "type": 3,
+                        "instance": 1
+                    },
+                    "objectName": "RxPanelData_Always_1",
+                    "displayName": "RxPanelData_Always_1",
+                    "objectType": 3,
+                    "presentValue": 0,
+                    "description": ""
+                },
+                "RxPanelData_TypeID": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 7
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 7
+                    },
+                    "objectName": "RxPanelData_TypeID",
+                    "displayName": "RxPanelData_TypeID",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_1": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 8
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 8
+                    },
+                    "objectName": "RxPanelData_Location_Location_1",
+                    "displayName": "RxPanelData_Location_Location_1",
+                    "presentValue": 39,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_2": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 9
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 9
+                    },
+                    "objectName": "RxPanelData_Location_Location_2",
+                    "displayName": "RxPanelData_Location_Location_2",
+                    "presentValue": 157,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_3": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 10
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 10
+                    },
+                    "objectName": "RxPanelData_Location_Location_3",
+                    "displayName": "RxPanelData_Location_Location_3",
+                    "presentValue": 255,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_4": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 11
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 11
+                    },
+                    "objectName": "RxPanelData_Location_Location_4",
+                    "displayName": "RxPanelData_Location_Location_4",
+                    "presentValue": 255,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_5": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 12
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 12
+                    },
+                    "objectName": "RxPanelData_Location_Location_5",
+                    "displayName": "RxPanelData_Location_Location_5",
+                    "presentValue": 255,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_6": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 13
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 13
+                    },
+                    "objectName": "RxPanelData_Location_Location_6",
+                    "displayName": "RxPanelData_Location_Location_6",
+                    "presentValue": 255,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_7": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 14
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 14
+                    },
+                    "objectName": "RxPanelData_Location_Location_7",
+                    "displayName": "RxPanelData_Location_Location_7",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_8": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 15
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 15
+                    },
+                    "objectName": "RxPanelData_Location_Location_8",
+                    "displayName": "RxPanelData_Location_Location_8",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_9": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 16
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 16
+                    },
+                    "objectName": "RxPanelData_Location_Location_9",
+                    "displayName": "RxPanelData_Location_Location_9",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_10": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 17
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 17
+                    },
+                    "objectName": "RxPanelData_Location_Location_10",
+                    "displayName": "RxPanelData_Location_Location_10",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_11": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 18
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 18
+                    },
+                    "objectName": "RxPanelData_Location_Location_11",
+                    "displayName": "RxPanelData_Location_Location_11",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_12": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 19
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 19
+                    },
+                    "objectName": "RxPanelData_Location_Location_12",
+                    "displayName": "RxPanelData_Location_Location_12",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_13": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 20
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 20
+                    },
+                    "objectName": "RxPanelData_Location_Location_13",
+                    "displayName": "RxPanelData_Location_Location_13",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_14": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 21
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 21
+                    },
+                    "objectName": "RxPanelData_Location_Location_14",
+                    "displayName": "RxPanelData_Location_Location_14",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_15": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 22
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 22
+                    },
+                    "objectName": "RxPanelData_Location_Location_15",
+                    "displayName": "RxPanelData_Location_Location_15",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_16": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 23
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 23
+                    },
+                    "objectName": "RxPanelData_Location_Location_16",
+                    "displayName": "RxPanelData_Location_Location_16",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_17": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 24
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 24
+                    },
+                    "objectName": "RxPanelData_Location_Location_17",
+                    "displayName": "RxPanelData_Location_Location_17",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_18": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 25
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 25
+                    },
+                    "objectName": "RxPanelData_Location_Location_18",
+                    "displayName": "RxPanelData_Location_Location_18",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_19": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 26
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 26
+                    },
+                    "objectName": "RxPanelData_Location_Location_19",
+                    "displayName": "RxPanelData_Location_Location_19",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_20": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 27
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 27
+                    },
+                    "objectName": "RxPanelData_Location_Location_20",
+                    "displayName": "RxPanelData_Location_Location_20",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_21": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 28
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 28
+                    },
+                    "objectName": "RxPanelData_Location_Location_21",
+                    "displayName": "RxPanelData_Location_Location_21",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_22": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 29
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 29
+                    },
+                    "objectName": "RxPanelData_Location_Location_22",
+                    "displayName": "RxPanelData_Location_Location_22",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_23": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 30
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 30
+                    },
+                    "objectName": "RxPanelData_Location_Location_23",
+                    "displayName": "RxPanelData_Location_Location_23",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_24": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 31
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 31
+                    },
+                    "objectName": "RxPanelData_Location_Location_24",
+                    "displayName": "RxPanelData_Location_Location_24",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                },
+                "RxPanelData_Location_Location_25": {
+                    "meta": {
+                        "objectId": {
+                            "type": 0,
+                            "instance": 32
+                        }
+                    },
+                    "objectID": {
+                        "type": 0,
+                        "instance": 32
+                    },
+                    "objectName": "RxPanelData_Location_Location_25",
+                    "displayName": "RxPanelData_Location_Location_25",
+                    "presentValue": 0,
+                    "units": "no-units",
+                    "description": ""
+                }
+            }
+        },
+        "readDevices": [
+            {
+                "key": 0,
+                "label": "LGATE-902-EATON 17800",
+                "data": "LGATE-902-EATON 17800",
+                "icon": "pi pi-server",
+                "children": [
+                    {
+                        "key": "17800-0",
+                        "label": "Points",
+                        "data": "Points Folder",
+                        "icon": "pi pi-circle-fill",
+                        "type": "pointFolder",
+                        "children": [
+                            {
+                                "key": "0-0-id_in_AI_0",
+                                "label": "id_in",
+                                "data": "id_in",
+                                "pointName": "id_in_AI_0",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: id_in",
+                                        "data": "id_in",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 130",
+                                        "data": 130,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_PanelNumber_AI_1",
+                                "label": "RxPanelData_PanelNumber",
+                                "data": "RxPanelData_PanelNumber",
+                                "pointName": "RxPanelData_PanelNumber_AI_1",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_PanelNumber",
+                                        "data": "RxPanelData_PanelNumber",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 1",
+                                        "data": 1,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 1",
+                                        "data": 1,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_CmdStatusNumber_AI_2",
+                                "label": "RxPanelData_CmdStatusNumber",
+                                "data": "RxPanelData_CmdStatusNumber",
+                                "pointName": "RxPanelData_CmdStatusNumber_AI_2",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_CmdStatusNumber",
+                                        "data": "RxPanelData_CmdStatusNumber",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 2",
+                                        "data": 2,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 36",
+                                        "data": 36,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Address_AI_3",
+                                "label": "RxPanelData_Address",
+                                "data": "RxPanelData_Address",
+                                "pointName": "RxPanelData_Address_AI_3",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Address",
+                                        "data": "RxPanelData_Address",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 3",
+                                        "data": 3,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Analogue_AI_4",
+                                "label": "RxPanelData_Analogue",
+                                "data": "RxPanelData_Analogue",
+                                "pointName": "RxPanelData_Analogue_AI_4",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Analogue",
+                                        "data": "RxPanelData_Analogue",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 4",
+                                        "data": 4,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Zone_AI_5",
+                                "label": "RxPanelData_Zone",
+                                "data": "RxPanelData_Zone",
+                                "pointName": "RxPanelData_Zone_AI_5",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Zone",
+                                        "data": "RxPanelData_Zone",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 5",
+                                        "data": 5,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Loop_AI_6",
+                                "label": "RxPanelData_Loop",
+                                "data": "RxPanelData_Loop",
+                                "pointName": "RxPanelData_Loop_AI_6",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Loop",
+                                        "data": "RxPanelData_Loop",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 6",
+                                        "data": 6,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_TypeID_AI_7",
+                                "label": "RxPanelData_TypeID",
+                                "data": "RxPanelData_TypeID",
+                                "pointName": "RxPanelData_TypeID_AI_7",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_TypeID",
+                                        "data": "RxPanelData_TypeID",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 7",
+                                        "data": 7,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_1_AI_8",
+                                "label": "RxPanelData_Location_Location_1",
+                                "data": "RxPanelData_Location_Location_1",
+                                "pointName": "RxPanelData_Location_Location_1_AI_8",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_1",
+                                        "data": "RxPanelData_Location_Location_1",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 8",
+                                        "data": 8,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 39",
+                                        "data": 39,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_2_AI_9",
+                                "label": "RxPanelData_Location_Location_2",
+                                "data": "RxPanelData_Location_Location_2",
+                                "pointName": "RxPanelData_Location_Location_2_AI_9",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_2",
+                                        "data": "RxPanelData_Location_Location_2",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 9",
+                                        "data": 9,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 157",
+                                        "data": 157,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_3_AI_10",
+                                "label": "RxPanelData_Location_Location_3",
+                                "data": "RxPanelData_Location_Location_3",
+                                "pointName": "RxPanelData_Location_Location_3_AI_10",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_3",
+                                        "data": "RxPanelData_Location_Location_3",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 10",
+                                        "data": 10,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 255",
+                                        "data": 255,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_4_AI_11",
+                                "label": "RxPanelData_Location_Location_4",
+                                "data": "RxPanelData_Location_Location_4",
+                                "pointName": "RxPanelData_Location_Location_4_AI_11",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_4",
+                                        "data": "RxPanelData_Location_Location_4",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 11",
+                                        "data": 11,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 255",
+                                        "data": 255,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_5_AI_12",
+                                "label": "RxPanelData_Location_Location_5",
+                                "data": "RxPanelData_Location_Location_5",
+                                "pointName": "RxPanelData_Location_Location_5_AI_12",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_5",
+                                        "data": "RxPanelData_Location_Location_5",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 12",
+                                        "data": 12,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 255",
+                                        "data": 255,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_6_AI_13",
+                                "label": "RxPanelData_Location_Location_6",
+                                "data": "RxPanelData_Location_Location_6",
+                                "pointName": "RxPanelData_Location_Location_6_AI_13",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_6",
+                                        "data": "RxPanelData_Location_Location_6",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 13",
+                                        "data": 13,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 255",
+                                        "data": 255,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_7_AI_14",
+                                "label": "RxPanelData_Location_Location_7",
+                                "data": "RxPanelData_Location_Location_7",
+                                "pointName": "RxPanelData_Location_Location_7_AI_14",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_7",
+                                        "data": "RxPanelData_Location_Location_7",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 14",
+                                        "data": 14,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_8_AI_15",
+                                "label": "RxPanelData_Location_Location_8",
+                                "data": "RxPanelData_Location_Location_8",
+                                "pointName": "RxPanelData_Location_Location_8_AI_15",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_8",
+                                        "data": "RxPanelData_Location_Location_8",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 15",
+                                        "data": 15,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_9_AI_16",
+                                "label": "RxPanelData_Location_Location_9",
+                                "data": "RxPanelData_Location_Location_9",
+                                "pointName": "RxPanelData_Location_Location_9_AI_16",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_9",
+                                        "data": "RxPanelData_Location_Location_9",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 16",
+                                        "data": 16,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_10_AI_17",
+                                "label": "RxPanelData_Location_Location_10",
+                                "data": "RxPanelData_Location_Location_10",
+                                "pointName": "RxPanelData_Location_Location_10_AI_17",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_10",
+                                        "data": "RxPanelData_Location_Location_10",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 17",
+                                        "data": 17,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_11_AI_18",
+                                "label": "RxPanelData_Location_Location_11",
+                                "data": "RxPanelData_Location_Location_11",
+                                "pointName": "RxPanelData_Location_Location_11_AI_18",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_11",
+                                        "data": "RxPanelData_Location_Location_11",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 18",
+                                        "data": 18,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_12_AI_19",
+                                "label": "RxPanelData_Location_Location_12",
+                                "data": "RxPanelData_Location_Location_12",
+                                "pointName": "RxPanelData_Location_Location_12_AI_19",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_12",
+                                        "data": "RxPanelData_Location_Location_12",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 19",
+                                        "data": 19,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_13_AI_20",
+                                "label": "RxPanelData_Location_Location_13",
+                                "data": "RxPanelData_Location_Location_13",
+                                "pointName": "RxPanelData_Location_Location_13_AI_20",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_13",
+                                        "data": "RxPanelData_Location_Location_13",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 20",
+                                        "data": 20,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_14_AI_21",
+                                "label": "RxPanelData_Location_Location_14",
+                                "data": "RxPanelData_Location_Location_14",
+                                "pointName": "RxPanelData_Location_Location_14_AI_21",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_14",
+                                        "data": "RxPanelData_Location_Location_14",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 21",
+                                        "data": 21,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_15_AI_22",
+                                "label": "RxPanelData_Location_Location_15",
+                                "data": "RxPanelData_Location_Location_15",
+                                "pointName": "RxPanelData_Location_Location_15_AI_22",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_15",
+                                        "data": "RxPanelData_Location_Location_15",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 22",
+                                        "data": 22,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_16_AI_23",
+                                "label": "RxPanelData_Location_Location_16",
+                                "data": "RxPanelData_Location_Location_16",
+                                "pointName": "RxPanelData_Location_Location_16_AI_23",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_16",
+                                        "data": "RxPanelData_Location_Location_16",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 23",
+                                        "data": 23,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_17_AI_24",
+                                "label": "RxPanelData_Location_Location_17",
+                                "data": "RxPanelData_Location_Location_17",
+                                "pointName": "RxPanelData_Location_Location_17_AI_24",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_17",
+                                        "data": "RxPanelData_Location_Location_17",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 24",
+                                        "data": 24,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_18_AI_25",
+                                "label": "RxPanelData_Location_Location_18",
+                                "data": "RxPanelData_Location_Location_18",
+                                "pointName": "RxPanelData_Location_Location_18_AI_25",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_18",
+                                        "data": "RxPanelData_Location_Location_18",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 25",
+                                        "data": 25,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_19_AI_26",
+                                "label": "RxPanelData_Location_Location_19",
+                                "data": "RxPanelData_Location_Location_19",
+                                "pointName": "RxPanelData_Location_Location_19_AI_26",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_19",
+                                        "data": "RxPanelData_Location_Location_19",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 26",
+                                        "data": 26,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_20_AI_27",
+                                "label": "RxPanelData_Location_Location_20",
+                                "data": "RxPanelData_Location_Location_20",
+                                "pointName": "RxPanelData_Location_Location_20_AI_27",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_20",
+                                        "data": "RxPanelData_Location_Location_20",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 27",
+                                        "data": 27,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_21_AI_28",
+                                "label": "RxPanelData_Location_Location_21",
+                                "data": "RxPanelData_Location_Location_21",
+                                "pointName": "RxPanelData_Location_Location_21_AI_28",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_21",
+                                        "data": "RxPanelData_Location_Location_21",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 28",
+                                        "data": 28,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_22_AI_29",
+                                "label": "RxPanelData_Location_Location_22",
+                                "data": "RxPanelData_Location_Location_22",
+                                "pointName": "RxPanelData_Location_Location_22_AI_29",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_22",
+                                        "data": "RxPanelData_Location_Location_22",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 29",
+                                        "data": 29,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_23_AI_30",
+                                "label": "RxPanelData_Location_Location_23",
+                                "data": "RxPanelData_Location_Location_23",
+                                "pointName": "RxPanelData_Location_Location_23_AI_30",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_23",
+                                        "data": "RxPanelData_Location_Location_23",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 30",
+                                        "data": 30,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_24_AI_31",
+                                "label": "RxPanelData_Location_Location_24",
+                                "data": "RxPanelData_Location_Location_24",
+                                "pointName": "RxPanelData_Location_Location_24_AI_31",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_24",
+                                        "data": "RxPanelData_Location_Location_24",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 31",
+                                        "data": 31,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Location_Location_25_AI_32",
+                                "label": "RxPanelData_Location_Location_25",
+                                "data": "RxPanelData_Location_Location_25",
+                                "pointName": "RxPanelData_Location_Location_25_AI_32",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Location_Location_25",
+                                        "data": "RxPanelData_Location_Location_25",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 32",
+                                        "data": 32,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Units: no-units",
+                                        "data": "no-units",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 0
+                            },
+                            {
+                                "key": "0-0-RxPanelData_CmdStatus_BI_0",
+                                "label": "RxPanelData_CmdStatus",
+                                "data": "RxPanelData_CmdStatus",
+                                "pointName": "RxPanelData_CmdStatus_BI_0",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_CmdStatus",
+                                        "data": "RxPanelData_CmdStatus",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 3",
+                                        "data": 3,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 3
+                            },
+                            {
+                                "key": "0-0-RxPanelData_Always_1_BI_1",
+                                "label": "RxPanelData_Always_1",
+                                "data": "RxPanelData_Always_1",
+                                "pointName": "RxPanelData_Always_1_BI_1",
+                                "icon": "pi readPointIcon",
+                                "children": [
+                                    {
+                                        "label": "Name: RxPanelData_Always_1",
+                                        "data": "RxPanelData_Always_1",
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Type: 3",
+                                        "data": 3,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Object Instance: 1",
+                                        "data": 1,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    },
+                                    {
+                                        "label": "Present Value: 0",
+                                        "data": 0,
+                                        "icon": "pi pi-cog",
+                                        "children": null
+                                    }
+                                ],
+                                "type": "point",
+                                "parentDevice": "LGATE-902-EATON 17800",
+                                "showAdded": false,
+                                "bacnetType": 3
+                            }
+                        ]
+                    }
+                ],
+                "type": "device",
+                "lastSeen": 1715882181941,
+                "showAdded": false,
+                "ipAddr": "172.16.20.219",
+                "deviceId": 17800,
+                "isMstpDevice": false,
+                "initialName": "LGATE-902-EATON 17800"
+            }
+        ],
+        "object_property_simplePayload": false,
+        "object_property_fullObject": true,
+        "x": 790,
+        "y": 640,
+        "wires": [
+            [
+                "4f1d96f46b4fe62e"
+            ]
+        ]
+    },
+    {
+        "id": "4f1d96f46b4fe62e",
+        "type": "Bacnet-Gateway",
+        "z": "e3ad3dbe01fb5790",
+        "name": "BACNET-GATEWAY",
+        "local_device_address": "0.0.0.0",
+        "apduTimeout": 6000,
+        "roundDecimal": 2,
+        "local_device_port": 47808,
+        "apduSize": "5",
+        "maxSegments": "0x50",
+        "retries": "5",
+        "broadCastAddr": "255.255.255.255",
+        "toLogIam": false,
+        "discover_polling_schedule": "900",
+        "discover_polling_schedule_value": "15",
+        "discover_polling_schedule_options": "Minutes",
+        "deviceId": 817001,
+        "logErrorToConsole": false,
+        "serverEnabled": false,
+        "device_read_schedule": "900",
+        "device_read_schedule_value": "15",
+        "device_read_schedule_options": "Minutes",
+        "deviceRangeRegisters": [
+            {
+                "enabled": true,
+                "start": "0",
+                "end": "4194303"
+            }
+        ],
+        "cacheFileEnabled": false,
+        "sanitise_device_schedule": "3600",
+        "sanitise_device_schedule_value": "1",
+        "sanitise_device_schedule_options": "Hours",
+        "x": 1000,
+        "y": 720,
+        "wires": [
+            [
+                "ca02e600f93c35bd",
+                "8cae34c3544a581d"
+            ]
+        ]
+    },
+    {
+        "id": "7baf90b051441830",
+        "type": "Bitpool-Inject",
+        "z": "e3ad3dbe01fb5790",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "doPoll": true,
+        "doDiscover": false,
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "74ab404d51a6ac3c"
+            ]
+        ]
+    },
+    {
+        "id": "abed05c2f13a0fac",
+        "type": "mqtt out",
+        "z": "e3ad3dbe01fb5790",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2f297919b4fcf3f5",
+        "x": 1250,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "f026392f1bce31a2",
+        "type": "function",
+        "z": "e3ad3dbe01fb5790",
+        "name": "bkp",
+        "func": "var painelnumber = msg.payload.RxPanelData_PanelNumber.presentValue;\nvar cmdstatus = msg.payload.RxPanelData_CmdStatus.presentValue;\nvar zona = msg.payload.RxPanelData_Zone.presentValue;\nvar laco = msg.payload.RxPanelData_Loop.presentValue;\nvar devicetipo = msg.payload.RxPanelData_TypeID.presentValue;\nvar cmdnumber = msg.payload.RxPanelData_CmdStatusNumber.presentValue;\nvar analogue = msg.payload.RxPanelData_Analogue.presentValue;\n\n// Arredonda a temperatura para duas casas decimais\n\nvar json = {\n    \"PanelNumber\": painelnumber,\n    \"cmdstatus\": cmdstatus,\n    \"cmdnumber\": cmdnumber, // Corrigido aqui\n    \"laco\": laco,\n    \"dispositivo\": devicetipo,\n    \"analogue\": analogue,\n    \"ts\": Math.floor(Date.now() / 1000)\n};\n\nmsg.payload = json;\nmsg.topic = \"CF1200\"+painelnumber + \"/update/sensor/\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca02e600f93c35bd",
+        "type": "function",
+        "z": "e3ad3dbe01fb5790",
+        "name": "function 10",
+        "func": "var painelnumber = msg.payload.RxPanelData_PanelNumber.presentValue;\nvar cmdstatus = msg.payload.RxPanelData_CmdStatus.presentValue;\nvar zona = msg.payload.RxPanelData_Zone.presentValue;\nvar laco = msg.payload.RxPanelData_Loop.presentValue;\nvar devicetipo = msg.payload.RxPanelData_TypeID.presentValue;\nvar cmdnumber = msg.payload.RxPanelData_CmdStatusNumber.presentValue;\nvar analogue = msg.payload.RxPanelData_Analogue.presentValue;\nvar endereco = msg.payload.RxPanelData_Address.presentValue;\n// Lista de tipos de dispositivos\nvar deviceTypes = {\n    0: 'N/A',\n    1: 'Optical Detector',\n    2: 'Ion Detector',\n    3: 'Heat A1R',\n    4: 'Opto/Heat Detector',\n    5: 'Heat BS Detector',\n    6: 'Heat CS Detector',\n    7: 'Carbon Monoxide Detector',\n    8: 'Sounder / Beacon',\n    9: 'Sounder Control Unit',\n    10: 'Voice Annunciator',\n    11: 'I/O Unit',\n    12: 'Call Point',\n    13: 'Repeater',\n    14: 'Zone/Shop Monitor',\n    15: 'Beam Detector',\n    16: 'Addressable RF Hybrid',\n    17: 'Zonal RF Hybrid',\n    18: 'Emergency Lighting Module',\n    19: '4-20mA Interface Unit',\n    20: 'SP40S',\n    21: 'Fan Controller',\n    22: 'Technical Input',\n    23: 'Technical Timer',\n    24: 'Non Fire Input',\n    25: 'Supervisor Interface',\n    26: 'Chinese Output',\n    27: 'MCIM'\n};\n\n// Função para converter CSV em objeto\nfunction parseCSV(csv) {\n  var lines = csv.split('\\n');\n  var result = {};\n  var headers = lines[0].split(';');\n\n  for (var i = 1; i < lines.length; i++) {\n    var currentline = lines[i].split(';');\n\n    // Skip empty lines or lines that do not have the correct number of fields\n    if (currentline.length !== headers.length || currentline.some(field => field.trim() === '')) {\n      continue;\n    }\n\n    var obj = {};\n\n    for (var j = 0; j < headers.length; j++) {\n      obj[headers[j].trim()] = currentline[j].trim();\n    }\n\n    // Converte cmdstatusnumber para inteiro para garantir a comparação correta\n    obj.cmdstatusnumber = parseInt(obj.cmdstatusnumber);\n\n    var key = obj.cmdstatus + '_' + obj.cmdstatusnumber; // chave única baseada em cmdstatus e cmdstatusnumber\n    result[key] = obj;\n  }\n\n  return result;\n}\n\n// CSV contendo os dados dos eventos\nvar csvData = `Event;cmdstatus;cmdstatusnumber;adress;analogue;zone;loop;typeid;location1-25\nGlobal Evacuate;Off;Off;1;0;0;0;0;0;Panel Text\nGlobal Slence;Off;2;0;0;0;0;0;0;Panel Text\nGlobal Reset;Off;3;0;0;0;0;0;Panel Text\nGlobal Disable Zones in Fire;Off;4;0;0;0;0;0;Panel Text\n\"Global Disable Addresses in Fire\";Off;5;0;0;0;0;0;Panel Text\nGlobal Mute Buzzer;Off;8;0;0;0;0;0;Panel Text\nGlobal Reset Cutouts;Off;14;0;0;0;0;0;Panel Text\nGlobal Disable 1/0;Off;16;1/0;0;0;0;0;Panel Text\nGlobal Enable 1/0;Off;17;1/0;0;0;0;0;Panel Text\nGlobal Disable Sounders;Off;18;1/0;0;0;0;0;Panel Text\nGlobal Enable Sounders;Off;19;1/0;0;0;0;0;Panel Text\nStart Zone Test;Off;28;0;0;Zone;0;0;0\nRequest Disables;Off;33;0;0;0;0;0;0\nGet Zane Text;Off;34;0;0;Zone;0;0;0\nDisable 1/0;Off;48;1/0;0;0;0;0;0\nEnable 1/0;Off;49;1/0;0;0;0;0;0\nDisable Sounders;Off;50;0;0;0;0;0;0\nEnable Sounders;Off;51;0;0;0;0;0;0\nDisable Zone;Off;52;0;0;Zone;0;0;0\nEnable Zane;Off;53;0;0;Zone;0;0;0\nDisable Address;Off;54;Address;0;0;Loop-1;0;0\nEnable Address;Off;55;Address;0;0;Loop-1;0;0\nDisable Cutouts;Off;56;0;0;0;0;0;0\nEnable Cutouts;Off;57;0;0;0;0;0;0\nDisable All;Off;58;0;0;0;0;0;0\nEnable All;Off;59;0;0;0;0;0;0\nAnaloaue Value;Off;235;Address;0;0;Loop-1;0;0\nAddress Fault;Off;9;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nFire;Off;10;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nTest fire;Off;11;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nDual Address;Off;12;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nPre-alarm;Off;14;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nNetwork Fault;Off;25;Panel;0;0;0;0;0\nMains Fault;On;6;0;0;0;0;0;PanelText\nLoop Driver Fault;On;7;0;0;0;Loop- 1;0;PanelText\nCharger Fault;On;8;0;0;0;0;0;PanelText\nRelav Fault;On;9;0;0;0;0;0;PanelText\nBatteru Fault;On;10;0;0;0;0;0;PanelText\nSounder 2 Fault;On;15;0;0;0;0;0;PanelText\nEarth Fault;On;16;0;0;0;0;0;PanelText\nSounder 1Fault;On;17;0;0;0;0;0;PanelText\nFRE Fault;On;23;0;0;0;0;0;PanelText\nFPE Fault;On;24;0;0;0;0;0;PanelText\nNew device;On;28;Address;0;0;Loop- 1;Type;0\nType Chanoed;On;29;Address;0;Zone;Loop- 1;Type;Address Text\nShort Middle Fault;On;32;0;0;0;Loop- 1;0;PanelText\nOpen Address;On;33;Address-1;0;Zone-1;Loop- 1;Type;Address Text\nOpen Positive Fault;On;34;0;0;0;Loop- 1;0;PanelText\nOpen Negative Fault;On;35;0;0;0;Loop- 1;0;PanelText\nShort Far Fault;On;36;0;0;0;Loop- 1;0;PanelText\nShort Near Fautt;On;37;0;0;0;Loop- 1;0;PanelText\nWatchdog Reset;On;39;0;0;0;0;0;PanelText\nFRE Active;On;47;0;0;0;0;0;PanelText\n1/0 Disabled;On;48;1/0;0;0;0;0;PanelText\n1/0 Enabled;On;49;1/0;0;0;0;0;PanelText\nSounders Disabled;On;50;0;0;0;0;0;PanelText\nSounders Enabled;On;51;0;0;0;0;0;PanelText\nZone Disabled;On;52;0;0;0;0;0;PanelText\nZone Enabled;On;53;0;0;Zone;0;0;PanelText\nAddress Disabled;On;54;Address;0;Zone;Loop-1;Type;Address Text\nAddress Enabled;On;55;Address;0;Zone;Loop-1;Type;Address Text\nOutputs Disabled;On;56;0;0;0;0;0;PanelText\nOutputs Enabled;On;57;0;0;0;0;0;PanelText\nAll Disabled;On;58;0;0;0;0;0;PanelText\nAll Enabled;On;59;0;0;0;0;0;PanelText\nSupervisory;On;216;Address;Value;Zone;Loop-1;Type;Address Text\nZone Text;On;217;0;0;Zone;0;0;Zone Text\nZone Test Fire;On;231;Address;Value;Zone;Loop-1;Type;Address Text\nAnalogue Value;On;235;Address;Value 1;Value 2;Loop-1;Type;Address Text\nExtinouisher On;On;238;0;0;0;0;0;PanelText\nBattery Fault;On;248;Address;Value 1;Zone;Loop-1;Type;Address Text\nClear Address Fautt;On;251;Address;Value 1;Zone;Loop-1;Type;Address Text\n`;\n// Mapeia os valores de cmdstatus para \"On\" ou \"Off\"\nvar statusText = (cmdstatus === 1) ? \"On\" : \"Off\";\n\n// Converter CSV para objeto\nvar eventMap = parseCSV(csvData);\n\n// Look up event details using cmdstatus and cmdnumber\nvar eventKey = statusText + '_' + cmdnumber.toString();\nvar eventDetails = eventMap[eventKey];\n\n// Se o evento não for encontrado, define valores padrão\nvar eventName;\nif (eventDetails) {\n  // Se o evento estiver mapeado, use seu nome\n  eventName = eventDetails.Event;\n} else {\n  // Se o evento não estiver mapeado, use \"Desconhecido\"\n  eventName = \"Desconhecido\";\n}\n\n// Correlaciona o devicetipo com o nome do dispositivo\nvar dispositivoNome = deviceTypes[devicetipo] || 'Desconhecido';\n\n// Função para decodificar os valores ASCII e retornar no msg.payload\nfunction decodeASCII(payload) {\n  var decodedValues = [];\n  for (var i = 1; i <= 25; i++) {\n    var locationKey = 'Location_' + i;\n    var locationProperty = payload['RxPanelData_Location_' + locationKey];\n    if (locationProperty) {\n      var presentValue = locationProperty.presentValue;\n      // Verificando se o valor presente é um número\n      if (!isNaN(presentValue)) {\n        var asciiCode = parseInt(presentValue);\n        var decodedChar = String.fromCharCode(asciiCode);\n        decodedValues.push(decodedChar);\n      }\n    }\n  }\n  return decodedValues.join(''); // Retornando os valores decodificados como uma string única\n}\n\n// Decodificar os valores do payload atual\nvar decodedValue = decodeASCII(msg.payload);\n\n// Cria o JSON com os dados\nvar json = {\n  \"Panel\": painelnumber,\n  \"cmdstatus\": statusText,\n  \"cmdnumber\": cmdnumber,\n  \"eventName\": eventName,\n  \"laco\": laco,\n  \"endereco\": endereco,\n  \"dispositivo\": dispositivoNome,\n  \"analogue\": analogue,\n  \"Texto\": decodedValue,\n  \"ts\": Math.floor(Date.now() / 1000)\n};\n\nmsg.payload = json;\nmsg.topic = \"CF1200\" + painelnumber + \"/update/sensor/BACNET\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 820,
+        "wires": [
+            [
+                "3b6db6c01431d27f",
+                "abed05c2f13a0fac"
+            ]
+        ]
+    },
+    {
+        "id": "3b6db6c01431d27f",
+        "type": "debug",
+        "z": "e3ad3dbe01fb5790",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "6aae951bf188ca66",
+        "type": "debug",
+        "z": "e3ad3dbe01fb5790",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8cae34c3544a581d",
+        "type": "function",
+        "z": "e3ad3dbe01fb5790",
+        "name": "convert ascii",
+        "func": "// Função para decodificar os valores ASCII e retornar no msg.payload\nfunction decodeASCII(payload) {\n    var decodedValues = [];\n    for (var i = 1; i <= 25; i++) {\n        var locationKey = 'Location_' + i;\n        var locationProperty = payload['RxPanelData_Location_' + locationKey];\n        if (locationProperty) {\n            var presentValue = locationProperty.presentValue;\n            // Verificando se o valor presente é um número\n            if (!isNaN(presentValue)) {\n                var asciiCode = parseInt(presentValue);\n                var decodedChar = String.fromCharCode(asciiCode);\n                decodedValues.push(decodedChar);\n            }\n        }\n    }\n    return decodedValues.join(''); // Retornando os valores decodificados como uma string única\n}\n\n// Decodificar os valores do payload atual\nvar decodedValue = decodeASCII(msg.payload);\n\n// Enviar o valor decodificado de volta para o payload\nmsg.payload = decodedValue;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 560,
+        "wires": [
+            [
+                "6aae951bf188ca66"
+            ]
+        ]
+    },
+    {
+        "id": "5db3c048bec4941e",
+        "type": "function",
+        "z": "e3ad3dbe01fb5790",
+        "name": "csv data",
+        "func": "var csvData = `Event;cmdstatus;cmdstatusnumber;adress;analogue;zone;loop;typeid;location1-25\nGlobal Evacuate;Off;Off;1;0;0;0;0;0;Panel Text\nGlobal Slence;Off;2;0;0;0;0;0;0;Panel Text\nGlobal Reset;Off;3;0;0;0;0;0;Panel Text\nGlobal Disable Zones in Fire;Off;4;0;0;0;0;0;Panel Text\n\"Global Disable Addresses in Fire\";Off;5;0;0;0;0;0;Panel Text\nGlobal Mute Buzzer;Off;8;0;0;0;0;0;Panel Text\nGlobal Reset Cutouts;Off;14;0;0;0;0;0;Panel Text\nGlobal Disable 1/0;Off;16;1/0;0;0;0;0;Panel Text\nGlobal Enable 1/0;Off;17;1/0;0;0;0;0;Panel Text\nGlobal Disable Sounders;Off;18;1/0;0;0;0;0;Panel Text\nGlobal Enable Sounders;Off;19;1/0;0;0;0;0;Panel Text\nStart Zone Test;Off;28;0;0;Zone;0;0;0\nRequest Disables;Off;33;0;0;0;0;0;0\nGet Zane Text;Off;34;0;0;Zone;0;0;0\nDisable 1/0;Off;48;1/0;0;0;0;0;0\nEnable 1/0;Off;49;1/0;0;0;0;0;0\nDisable Sounders;Off;50;0;0;0;0;0;0\nEnable Sounders;Off;51;0;0;0;0;0;0\nDisable Zone;Off;52;0;0;Zone;0;0;0\nEnable Zane;Off;53;0;0;Zone;0;0;0\nDisable Address;Off;54;Address;0;0;Loop-1;0;0\nEnable Address;Off;55;Address;0;0;Loop-1;0;0\nDisable Cutouts;Off;56;0;0;0;0;0;0\nEnable Cutouts;Off;57;0;0;0;0;0;0\nDisable All;Off;58;0;0;0;0;0;0\nEnable All;Off;59;0;0;0;0;0;0\nAnaloaue Value;Off;235;Address;0;0;Loop-1;0;0\nAddress Fault;Off;9;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nFire;Off;10;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nTest fire;Off;11;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nDual Address;Off;12;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nPre-alarm;Off;14;Address-1;Value;Zone-1;Loop- 1;Type;Address Text\nNetwork Fault;Off;25;Panel;0;0;0;0;0\nMains Fault;On;6;0;0;0;0;0;PanelText\nLoop Driver Fault;On;7;0;0;0;Loop- 1;0;PanelText\nCharger Fault;On;8;0;0;0;0;0;PanelText\nRelav Fault;On;9;0;0;0;0;0;PanelText\nBatteru Fault;On;10;0;0;0;0;0;PanelText\nSounder 2 Fault;On;15;0;0;0;0;0;PanelText\nEarth Fault;On;16;0;0;0;0;0;PanelText\nSounder 1Fault;On;17;0;0;0;0;0;PanelText\nFRE Fault;On;23;0;0;0;0;0;PanelText\nFPE Fault;On;24;0;0;0;0;0;PanelText\nNew device;On;28;Address;0;0;Loop- 1;Type;0\nType Chanoed;On;29;Address;0;Zone;Loop- 1;Type;Address Text\nShort Middle Fault;On;32;0;0;0;Loop- 1;0;PanelText\nOpen Address;On;33;Address-1;0;Zone-1;Loop- 1;Type;Address Text\nOpen Positive Fault;On;34;0;0;0;Loop- 1;0;PanelText\nOpen Neoative Fault;On;35;0;0;0;Loop- 1;0;PanelText\nShort Far Fault;On;36;0;0;0;Loop- 1;0;PanelText\nShort Near Fautt;On;37;0;0;0;Loop- 1;0;PanelText\nWatchdoo Reset;On;39;0;0;0;0;0;PanelText\nFRE Active;On;47;0;0;0;0;0;PanelText\n1/0 Disabled;On;48;1/0;0;0;0;0;PanelText\n1/0 Enabled;On;49;1/0;0;0;0;0;PanelText\nSounders Disabled;On;50;0;0;0;0;0;PanelText\nSounders Enabled;On;51;0;0;0;0;0;PanelText\nZone Disabled;On;52;0;0;0;0;0;PanelText\nZone Enabled;On;53;0;0;Zone;0;0;PanelText\nAddress Disabled;On;54;Address;0;Zone;Loop-1;Type;Address Text\nAddress Enabled;On;55;Address;0;Zone;Loop-1;Type;Address Text\nOutputs Disabled;On;56;0;0;0;0;0;PanelText\nOutputs Enabled;On;57;0;0;0;0;0;PanelText\nAll Disabled;On;58;0;0;0;0;0;PanelText\nAll Enabled;On;59;0;0;0;0;0;PanelText\nSupervisory;On;216;Address;Value;Zone;Loop-1;Type;Address Text\nZone Text;On;217;0;0;Zone;0;0;Zone Text\nZone Test Fire;On;231;Address;Value;Zone;Loop-1;Type;Address Text\nAnalogue Value;On;235;Address;Value 1;Value 2;Loop-1;Type;Address Text\nExtinouisher On;On;238;0;0;0;0;0;PanelText\nBattery Fault;On;248;Address;Value 1;Zone;Loop-1;Type;Address Text\nClear Address Fautt;On;251;Address;Value 1;Zone;Loop-1;Type;Address Text\n`;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    }
+]
