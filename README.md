@@ -6,6 +6,7 @@ sudo nano /etc/systemd/system/ping.service
 ```
 
 ```
+[Unit]
 Description=Decoder Program
 After=network.target
 
