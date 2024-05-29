@@ -11,7 +11,7 @@ Description=Decoder Program
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/localping/ping.py
+ExecStart=/usr/bin/python3 /home/localping/localping.py
 WorkingDirectory=/home/localping
 Restart=always
 User=root
